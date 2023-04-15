@@ -25,32 +25,32 @@
                 <div class="row d-flex">
                     <div class="col-6">
                         <label for="tarjeta">Card #</label>
-                        <input class="form-control w-100" type="text" id="tarjeta" size="16" placeholder="xxxx xxxx xxxx xxxx" minlength="16" required>
+                        <input class="form-control w-100" type="text" name="card" id="tarjeta" size="16" placeholder="xxxx xxxx xxxx xxxx" minlength="16" required>
                     </div>
                     <div class="col-2">
                         <label for="cvc">CVC #</label>
-                        <input class="form-control w-100" type="text" id="cvc" size="4" placeholder="0000" minlength="3" required>
+                        <input class="form-control w-100" name="cvc" type="text" id="cvc" size="4" placeholder="0000" minlength="3" required>
                     </div>
                     <div class="col-4">
                         <label for="amount">Amount</label>
-                        <input class="form-control w-100" type="text" id="amount" placeholder="$ Amount">
+                        <input class="form-control w-100" name="amount" type="text" id="amount" placeholder="$ Amount">
                     </div>
                 </div>
                 <!--apartado de nombre-->
                 <div class="row">
                     <div class="col">
                         <label for="firstName">First Name</label>
-                        <input class="form-control w-100" type="text" id="firstName" size="15" minlength="2"></div>
+                        <input class="form-control w-100" name="firstname" type="text" id="firstName" size="15" minlength="2"></div>
                     <div class="col">
                         <label for="lastName">Last Name</label>
-                        <input class="form-control w-100" type="text" id="lastName" size="15" minlength="2">
+                        <input class="form-control w-100" name="lastname" type="text" id="lastName" size="15" minlength="2">
                     </div>
                 </div>
                 <!--apartado de direccion-->
                 <div class="row">
                     <div class="col">
                         <label for="city">City</label>
-                        <input class="form-control w-100" type="text" id="city" minlength="3"></div>
+                        <input class="form-control w-100" name="city" type="text" id="city" minlength="3"></div>
                     <div class="col">
                         <label for="state">State</label>
                         <select class="form-control w-100" name="state" id="state" required>
@@ -64,17 +64,17 @@
                     </div>
                     <div class="col">
                         <label for="cp">Cp</label>
-                        <input class="form-control w-100" type="text" id="cp" required minlength="4">
+                        <input class="form-control w-100" name="cp" type="text" id="cp" required minlength="4">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
                         <h4 class="m-4">We Accept</h4>
                         <div class="row w-50 d-flex bg-secondary p-2 rounded-3">
-                            <label class="col" for="mastercard"><input class="form-check-input" type="radio" id="mastercard" name="payMethod">  <i class="fa-brands fa-cc-mastercard fa-lg" style="color: #eaeaec;"></i></label>
-                            <label class="col" for="visa"><input class="form-check-input" type="radio" id="visa" name="payMethod">  <i class="fa-brands fa-cc-visa fa-lg" style="color: #eaeaec;"></i></label>
-                            <label class="col" for="googlepay"><input class="form-check-input" type="radio" id="googlepay"  name="payMethod">  <i class="fa-brands fa-google-pay fa-lg" style="color: #eaeaec;"></i></label>
-                            <label class="col" for="applepay"><input  class="form-check-input"type="radio" id="applepay" name="payMethod">  <i class="fa-brands fa-apple-pay fa-lg" style="color: #eaeaec;"></i></label>
+                            <label class="col" name="paymastercad" for="mastercard"><input class="form-check-input" type="radio" id="mastercard" name="payMethod">  <i class="fa-brands fa-cc-mastercard fa-lg" style="color: #eaeaec;"></i></label>
+                            <label class="col" name="payvisa" for="visa"><input class="form-check-input" type="radio" id="visa" name="payMethod">  <i class="fa-brands fa-cc-visa fa-lg" style="color: #eaeaec;"></i></label>
+                            <label class="col" name="googlepay" for="googlepay"><input class="form-check-input" type="radio" id="googlepay"  name="payMethod">  <i class="fa-brands fa-google-pay fa-lg" style="color: #eaeaec;"></i></label>
+                            <label class="col" name="applepay" for="applepay"><input  class="form-check-input"type="radio" id="applepay" name="payMethod">  <i class="fa-brands fa-apple-pay fa-lg" style="color: #eaeaec;"></i></label>
                         </div>
                         
                         
